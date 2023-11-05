@@ -12,13 +12,13 @@ def calcular_desviación_típica(numeros, media):
     sumaCuadrados = 0
     for numero in numeros:
         sumaCuadrados = sumaCuadrados + (numero - media) ** 2
-    varianza = sumaCuadrados / (len(numeros) -1)
+    varianza = sumaCuadrados / (len(numeros))
     desviaciónTípica = (varianza) ** 0.5
     return desviaciónTípica
 
 if __name__ == "__main__":
     #Entrada
-    numeros_str = input("Ingresa una lista de números separados por comas: ")
+    numeros_str = input("Introduzca una lista de números separados por comas: ")
     numeros = [float(x) for x in numeros_str.split(',')]
 
     #proceso
